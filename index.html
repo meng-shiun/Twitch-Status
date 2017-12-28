@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Twitch.tv Status - MS</title>
+
+  <!-- Bootstrap v4.0 beta.2-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="title text-center">
+    <h1>Twitch Streamers</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="bar"></div>
+    <div class="container">
+
+      <section class="row justify-content-center">
+
+        <div class="col-12 col-sm-6 streamer-card">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#all-user">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#online-user">Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#offline-user">Offline</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+
+            <!-- Search box -->
+            <form class="search-area">
+              <input type="text" id="filter_users" value="" placeholder="Search streamer..." autocomplete="off">
+            </form>
+
+            <div class="tab-pane active" id="all-user">
+              <!-- Hide scrollbar but enable scroll -->
+              <div class="hide-scroll">
+                <!-- All streamer section -->
+                <ul class="list-group all-user-list">
+                </ul>
+              </div>
+            </div>
+
+            <!-- Online streamer section -->
+            <div class="tab-pane container" id="online-user">
+              <div class="hide-scroll">
+                <div class="list-group online-user-list"></div>
+              </div>
+            </div>
+
+            <!-- Offline streamer section -->
+            <div class="tab-pane container" id="offline-user">
+              <div class="hide-scroll">
+                <div class="list-group offline-user-list"></div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+
+
+  <!-- jQuery -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
